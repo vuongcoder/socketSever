@@ -13,6 +13,9 @@
     "socket.io-client": "^1.7.3",
     "socketio-wildcard": "^0.3.0"
   },
+  "engines":{
+	"node": "6.9.4"
+}
   "devDependencies": {
     "ip": "^1.1.4"
   },
