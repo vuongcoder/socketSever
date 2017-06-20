@@ -3,7 +3,7 @@
 		<div class="list-group text-center">
 			<!-- cục giới thiệu -->
 			<div class="list-group-item list-group-item-home">
-				<h1>Socket Client Webapp <small>1.0</small>
+				<h1> SmartHome Nhim Xu <small>1.0</small>
 				</h1>
 			</div>
 			
@@ -13,11 +13,11 @@
 					<i class="fa fa-gamepad feature-icon text-primary"></i>
 				</div>
 				<div>
-					<h3 class="home-heading">Cảm biến nhiệt độ phòng</h3>
+					<h3 class="home-heading">Nhiệt độ phòng</h3>
 					Nhiệt độ: {{NhietDo}}<br />
 					<h3 class="home-heading">Cảm biến ACS712 (đo dòng điện)</h3>
-					Điện áp đầu dò: {{DienAp}} 
-					Dòng điện:  {{Ampe}} <br />
+					Điện áp đầu dò: {{DienAp}} <br />
+					Dòng điện:  {{Ampe}} 
 					
 				</div>
 			</div>
@@ -33,6 +33,16 @@
 						Đèn LED thứ {{$index}} đang {{led_value ? "Bật" : "Tắt"}}. <input type="checkbox" ng-true-value="1" ng-false-value="0" ng-change="changeLED()" ng-model="leds_status[$index]" />
 						
 					</div>
+				</div>
+			</div>
+			<!-- Cục cập nhập giá trị servo -->
+			<div class="list-group-item list-group-item-home">
+				<div>
+					<i class="fa fa-tachometer feature-icon  text-primary"></i>
+				</div>
+				<div>
+					<h3 class="home-heading">Thay đổi độ sáng của đèn</h3>
+					<input type="text" class="input text" ng-model="lightlevel" ng-change="updatelight(lightlevel)" />
 				</div>
 			</div>
 			
