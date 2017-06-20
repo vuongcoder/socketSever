@@ -15,7 +15,7 @@ angular.module('myApp', [
 	});
 	return mySocket;
 	
-/////////////////////// Những dòng code ở trên phần này là phần cài đặt, các bạn hãy đọc thêm về angularjs để hiểu, cái này không nhảy cóc được nha!
+/// Những dòng code ở trên phần này là phần cài đặt, các bạn hãy đọc thêm về angularjs để hiểu, cái này không nhảy cóc được nha!
 }).controller('Home', function($scope, mySocket) {
 	////Khu 1 -- Khu cài đặt tham số 
     //cài đặt một số tham số test chơi
@@ -45,6 +45,7 @@ angular.module('myApp', [
 	$scope.DienAp = json.mV + " mV"
 	$scope.Ampe = json.mA + " mA"
 	$scope.NhietDo = json.Temperature + " C"
+	$scope.leds_status = json.data
 		
 	})
 	//Khi nhận được lệnh LED_STATUS

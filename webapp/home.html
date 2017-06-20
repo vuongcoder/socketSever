@@ -13,10 +13,12 @@
 					<i class="fa fa-gamepad feature-icon text-primary"></i>
 				</div>
 				<div>
-					<h3 class="home-heading">Cảm biến nhiệt độ</h3>
-					Điện áp đầu dò: {{DienAp}} <br />
+					<h3 class="home-heading">Cảm biến nhiệt độ phòng</h3>
+					Nhiệt độ: {{NhietDo}}<br />
+					<h3 class="home-heading">Cảm biến ACS712 (đo dòng điện)</h3>
+					Điện áp đầu dò: {{DienAp}} 
 					Dòng điện:  {{Ampe}} <br />
-					Nhiệt độ: {{NhietDo}}
+					
 				</div>
 			</div>
 			
@@ -29,6 +31,7 @@
 					<h3 class="home-heading">TRẠNG THÁI ĐÈN LED</h3>
 					<div ng-repeat="led_value in leds_status  track by $index">
 						Đèn LED thứ {{$index}} đang {{led_value ? "Bật" : "Tắt"}}. <input type="checkbox" ng-true-value="1" ng-false-value="0" ng-change="changeLED()" ng-model="leds_status[$index]" />
+						
 					</div>
 				</div>
 			</div>
